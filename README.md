@@ -56,7 +56,7 @@ https://user-images.githubusercontent.com/89751266/146694320-0ee3f516-940e-43db-
 
 
 
-# Link to the GitHub Page #
+# Link to the App #
 
-[Live App](https://ddoherty6.github.io/dinner-for-you/)
+[Live App](https://asadi80.github.io/kitchen/)
                     

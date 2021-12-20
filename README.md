@@ -1,4 +1,4 @@
-# Dinner For You
+# Kitchen
 
 
 ## Description
@@ -23,12 +23,9 @@ This app also allows the user to email themselves a copy of the recipe and all r
 - EasyMail via Radid API
 
 ## Development
+Dinner For You. Using integrated Github kanban board team split tasks into user interface, recipe history, client side storage, and the API calls. Team communicated well to build components separately and then join them to create seamless app.
 
-Development initially started on an app called Table Ready, which used an API to scan the ID of a customer at a restaurant to get their informaiton and create a profile of them for the restaurant. MVP included functionality to put the customer on a waitlist and send a text to them when their table was ready. The project was scrapped early due to issues with the ID scanning OCR API.
 
-Development shifted to the current MVP, Dinner For You. Using integrated Github kanban board team split tasks into user interface, recipe history, client side storage, and the API calls. Team communicated well to build components separately and then join them to create seamless app.
-
-## Future Development
 
 ### Additional Features
 
@@ -59,7 +56,7 @@ https://user-images.githubusercontent.com/89751266/146694320-0ee3f516-940e-43db-
 
 
 
-# Link to the GitHub Page #
+# Link to the App #
 
-[Live App](https://ddoherty6.github.io/dinner-for-you/)
+[Live App](https://asadi80.github.io/kitchen/)
                     

@@ -9,16 +9,19 @@ $(document).each(function(){
     $('#oildrecipe').empty();
     for(j=0;j<localStorage.length;j++){
             var value = localStorage.getItem(j,value);
-        //     $(this).val(value);
-        //    arr.push(value);
+        
 		   //console.log(value);
 		   var info=value;
 			$('#oildrecipe')
 			.append('<li><a value type="button" href target="_blanck" class=" btn-danger btn-lg" data-mdb-ripple-color="#be8989 oldRecipeMeal" id="oldRecipeMeal">'
 			+ info +'</a></li>');
     }
-    
+    $('<a type="button" href target="_blank" class="btn btn-danger btn-lg" data-mdb-ripple-color="#be8989" id="clear"> Clear Old Recipe </a>').appendTo("#oildrecipe");
 });
+$(document).on("click", "#clear", function(){
+	localStorage.clear();
+  });
+
       /// targting old recipe
 $(document).on('click','#oldRecipeMeal', function (e) {     
 	var v = $(this).text();

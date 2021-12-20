@@ -1,3 +1,5 @@
+var token = config.MY_API_TOKEN;
+var key = config.SECRET_API_KEY;
 var sendMail = function(userName, userEmail) { // using EasyMail API
 
   // email is sent successfully
@@ -28,7 +30,7 @@ var sendMail = function(userName, userEmail) { // using EasyMail API
 		"headers": {
 			"content-type": "application/json",
 			"x-rapidapi-host": "easymail.p.rapidapi.com",
-			"x-rapidapi-key": "64255219f1msh5b247a33bd6a616p1c9290jsnbf2d85b8c5f9"
+			"x-rapidapi-key": key
 		},
 		"processData": false,
 		"data":form

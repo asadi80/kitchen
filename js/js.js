@@ -9,13 +9,13 @@ $(document).each(function(){
     $('#oildrecipe').empty();
     for(j=0;j<localStorage.length;j++){
             var value = localStorage.getItem(j,value);
-            $(this).val(value);
-           arr.push(value);
+        //     $(this).val(value);
+        //    arr.push(value);
 		   //console.log(value);
-		   var info=JSON.parse(value);
+		   var info=value;
 			$('#oildrecipe')
 			.append('<li><a value type="button" href target="_blanck" class=" btn-danger btn-lg" data-mdb-ripple-color="#be8989 oldRecipeMeal" id="oldRecipeMeal">'
-			+ info.mealname +'</a></li>');
+			+ info +'</a></li>');
     }
     
 });
@@ -233,7 +233,7 @@ function recipeFun(){
 			$('#image').attr('src', foodImage);
 
 			var idMeal= result.meals[0].idMeal;
-			localStorageFun(i,idMeal,mealName);
+			localStorageFun(i,mealName);
 
 	
 
@@ -243,12 +243,12 @@ function recipeFun(){
 }
 
 			//local storge function
-function localStorageFun(x,val,meal){
-	var mea={
-		mealname:meal,
-		mealnumber:val
-	}
-	localStorage.setItem(x,JSON.stringify(mea));
+function localStorageFun(x,meal){
+	
+		
+		
+	
+	localStorage.setItem(x,meal);
 	$('#oildrecipe').append('<li><a type="button" href target="_blanck" class=" btn-danger btn-lg" data-mdb-ripple-color="#be8989" id="oldRecipeMeal">'+ mealName +'</a></li>')
 	i++;
 } 

@@ -15,8 +15,8 @@ $(document).each(function(){
 			$('#oildrecipe')
 			.append('<li><a value type="button" href target="_blanck" class=" btn-danger btn-lg" data-mdb-ripple-color="#be8989 oldRecipeMeal" id="oldRecipeMeal">'
 			+ info +'</a></li>');
-    }
-    $('<a type="button" href target="_blank" class="btn btn-danger btn-lg" data-mdb-ripple-color="#be8989" id="clear"> Clear Old Recipe </a>').appendTo("#oildrecipe");
+    }$("oildrecipe").empty();
+    $('<a type="button" href  class="btn btn-danger btn-lg" data-mdb-ripple-color="#be8989" id="clear">Clear</a>').appendTo("#oildrecipe");
 });
 $(document).on("click", "#clear", function(){
 	localStorage.clear();
